@@ -8,6 +8,7 @@ steps:
   - name: 'docker'
     args: ['exec','goapp','go','test']
 
+
 #  - name: 'docker'
 #    args: ['push','jp/docker-exemplo:latest']
 #
