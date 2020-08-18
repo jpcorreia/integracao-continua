@@ -1,4 +1,7 @@
 steps:
+  - name: 'gcr.io/cloud-builders/mvn'
+    args: ['deploy']
+
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build','-t','jp/docker-exemplo:latest', '-t', 'jp/docker-exemplo:$SHORT_SHA','.']
 
